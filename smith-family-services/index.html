@@ -5,97 +5,165 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smith Family Services — Lawn Care & Property Services in Muncie, IN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--g:#2f6b2f;--g2:#e8f3e3;--ink:#1c2a1c;--muted:#5d6b5d;--line:#dfe7dc;--sun:#f2b630}
+  :root{--g:#2d6a2d;--g-d:#1d4a1f;--g-l:#eaf4e4;--ink:#152015;--muted:#5a675a;--line:#dfe7dc;--sun:#f2b630}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-  .notice{background:var(--sun);color:#3a2a00;text-align:center;font-size:.9rem;padding:8px 12px;font-weight:600}
-  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
-  .logo{font-weight:800;font-size:1.2rem;color:var(--g)}
-  .logo small{display:block;font-weight:500;font-size:.75rem;color:var(--muted)}
-  nav a{margin-left:20px;color:var(--ink);text-decoration:none;font-size:.95rem}
-  .call{background:var(--g);color:#fff!important;padding:10px 18px;border-radius:999px;font-weight:600}
-  .hero{background:linear-gradient(120deg,var(--g2),#fff 65%);padding:64px 0}
-  .hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
-  .hero h1{font-size:clamp(2rem,4vw,2.9rem);line-height:1.12}
-  .hero p.lead{font-size:1.12rem;color:var(--muted);margin:16px 0 22px}
-  .checks{list-style:none;display:grid;gap:8px}
-  .checks li::before{content:"✓";color:var(--g);font-weight:800;margin-right:8px}
-  .save{display:inline-block;margin-top:22px;background:#fff;border:2px dashed var(--g);border-radius:12px;padding:12px 16px;font-weight:600}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+  .notice{background:var(--sun);color:#3a2a00;text-align:center;font-size:.9rem;padding:9px 14px;font-weight:600}
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;padding:12px 22px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand b{font-weight:800;font-size:1.2rem;color:var(--g-d);letter-spacing:-.01em}
+  .brand small{display:block;font-size:.75rem;color:var(--muted);font-weight:500}
+  .bbb{height:38px}
+  nav{display:flex;align-items:center;gap:24px}
+  nav a{text-decoration:none;font-size:.95rem;font-weight:500}
+  .call{background:var(--g);color:#fff!important;padding:10px 18px;border-radius:999px;font-weight:700;white-space:nowrap}
+  /* hero */
+  .hero{position:relative;color:#fff;padding:70px 0 80px;background:url("https://static.wixstatic.com/media/5c1476_930efaff37f4486a9321bbc6ddc7d98f~mv2.jpg/v1/fill/w_1920,h_1000,al_c,q_80/hero.jpg") center/cover}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(14,32,14,.88) 0%,rgba(14,32,14,.65) 55%,rgba(14,32,14,.35) 100%)}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+  .eyebrow{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:5px 12px;border-radius:999px;font-size:.82rem;font-weight:600;margin-bottom:16px}
+  .hero h1{font-size:clamp(2.1rem,4.3vw,3.2rem);line-height:1.08;letter-spacing:-.02em}
+  .hero p.lead{font-size:1.12rem;opacity:.92;margin:18px 0 22px;max-width:560px}
+  .checks{list-style:none;display:grid;gap:9px}
+  .checks li{display:flex;gap:10px;align-items:flex-start}
+  .checks li::before{content:"✓";flex:0 0 22px;height:22px;border-radius:50%;background:var(--sun);color:#3a2a00;font-weight:800;font-size:.8rem;display:flex;align-items:center;justify-content:center;margin-top:2px}
   /* estimate form */
-  .est{background:#fff;border-radius:18px;padding:26px;box-shadow:0 20px 50px rgba(47,107,47,.18)}
-  .est h2{font-size:1.35rem}
-  .est .sub{color:var(--muted);font-size:.92rem;margin-bottom:14px}
-  .steps{display:flex;gap:6px;margin-bottom:16px}
-  .steps span{flex:1;height:6px;border-radius:9px;background:var(--line)}
-  .steps span.on{background:var(--g)}
+  .est{background:#fff;color:var(--ink);border-radius:18px;padding:28px;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+  .est h2{font-size:1.4rem;letter-spacing:-.01em}
+  .est .sub{color:var(--muted);font-size:.92rem;margin:4px 0 14px}
+  .bar{display:flex;gap:6px;margin-bottom:16px}
+  .bar span{flex:1;height:6px;border-radius:9px;background:var(--line)}
+  .bar span.on{background:var(--g)}
   .step{display:none}.step.on{display:block}
   .opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .opt{border:1.5px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;font-size:.93rem;text-align:left;background:#fff}
-  .opt.sel{border-color:var(--g);background:var(--g2);font-weight:600}
-  label{display:block;font-size:.85rem;color:var(--muted);margin:12px 0 4px}
+  .opt{border:1.5px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;font:inherit;font-size:.92rem;text-align:left;background:#fff;color:var(--ink)}
+  .opt:hover{border-color:var(--g)}
+  .opt.sel{border-color:var(--g);background:var(--g-l);font-weight:600}
+  label{display:block;font-size:.84rem;color:var(--muted);margin:12px 0 4px;font-weight:500}
   input,textarea,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font:inherit}
-  textarea{min-height:80px}
+  textarea{min-height:76px}
   .row{display:flex;gap:10px;margin-top:18px}
-  .btn{flex:1;background:var(--g);color:#fff;border:0;border-radius:10px;padding:13px;font-weight:700;font-size:1rem;cursor:pointer;text-decoration:none;text-align:center;display:inline-block}
-  .btn.back{background:#fff;color:var(--g);border:1.5px solid var(--g);flex:0 0 90px}
-  .done{text-align:center;padding:30px 0}
-  .done .big{font-size:3rem}
-  section{padding:68px 0}
-  h2.t{font-size:2rem;text-align:center}
-  p.t{text-align:center;color:var(--muted);max-width:620px;margin:8px auto 38px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
-  .card{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff}
-  .card .ico{font-size:1.8rem}
-  .card h3{margin:6px 0}
-  .card p,.card li{color:var(--muted);font-size:.95rem}
-  .card ul{padding-left:18px}
-  .alt{background:#f6faf4}
-  .q{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--line)}
-  .q p{font-style:italic}
-  .q b{display:block;margin-top:10px;font-size:.9rem}
-  .q span{color:var(--muted);font-size:.82rem}
-  .band{background:var(--g);color:#fff;text-align:center;padding:54px 20px}
-  .band h2{font-size:2rem}
-  .band p{opacity:.9;margin:8px 0 20px}
-  .band .btn{background:#fff;color:var(--g);flex:none;padding:13px 28px}
-  footer{padding:28px 0;font-size:.88rem;color:var(--muted)}
-  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-  .call{white-space:nowrap}
-  @media(max-width:860px){.hero .wrap{grid-template-columns:1fr}nav a:not(.call){display:none}}
-  @media(max-width:480px){.logo{font-size:1rem}.logo small{display:none}.call{padding:8px 12px;font-size:.85rem}}
+  .btn{flex:1;background:var(--g);color:#fff;border:0;border-radius:10px;padding:13px 20px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none;text-align:center;display:inline-block}
+  .btn:hover{background:var(--g-d)}
+  .btn.ghost{background:#fff;color:var(--g);border:1.5px solid var(--g);flex:0 0 80px}
+  .done{text-align:center;padding:26px 0}
+  .done .big{font-size:2.8rem}
+  /* trust strip */
+  .trust{background:var(--g-d);color:#fff}
+  .trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:18px 22px;text-align:center;font-weight:600;font-size:.95rem}
+  .trust span{opacity:.75;font-weight:500;display:block;font-size:.8rem}
+  section{padding:76px 0}
+  .head{text-align:center;max-width:640px;margin:0 auto 42px}
+  .head .k{color:var(--g);font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+  .head h2{font-size:clamp(1.7rem,3vw,2.3rem);letter-spacing:-.02em;margin:6px 0 8px}
+  .head p{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--line);transition:.2s}
+  .svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,40,20,.12)}
+  .svc img{height:190px;width:100%;object-fit:cover}
+  .svc .b{padding:20px 22px 24px}
+  .svc h3{font-size:1.12rem}
+  .svc p{color:var(--muted);font-size:.94rem;margin-top:6px}
+  .more{background:var(--g-l);border:0;padding:26px}
+  .more ul{list-style:none;margin-top:10px;display:grid;gap:7px;color:var(--ink)}
+  .more li::before{content:"•";color:var(--g);font-weight:800;margin-right:8px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  .panel{position:relative;border-radius:20px;overflow:hidden;min-height:360px;color:#fff;display:flex;align-items:flex-end}
+  .panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 25%,rgba(0,0,0,.78))}
+  .panel .c{position:relative;z-index:1;padding:28px}
+  .panel h3{font-size:1.5rem}
+  .panel p{opacity:.9;margin:6px 0 14px;max-width:440px}
+  .panel a{background:#fff;color:var(--g-d);padding:10px 18px;border-radius:999px;font-weight:700;text-decoration:none;display:inline-block}
+  .alt{background:#f6faf3}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+  .st{background:#fff;border-radius:16px;padding:26px;border:1px solid var(--line)}
+  .st::before{counter-increment:s;content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--g);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;margin-bottom:12px}
+  .st p{color:var(--muted);font-size:.95rem;margin-top:4px}
+  .reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .q{background:#fff;border-radius:16px;padding:24px;border:1px solid var(--line)}
+  .stars{color:#f2a900;letter-spacing:2px}
+  .q p{margin:8px 0 12px}
+  .q b{font-size:.92rem}
+  .q span{color:var(--muted);font-size:.82rem;margin-left:6px}
+  .faq{max-width:780px;margin:0 auto}
+  details{border-bottom:1px solid var(--line);padding:18px 4px}
+  summary{cursor:pointer;font-weight:600;font-size:1.04rem;list-style:none;display:flex;justify-content:space-between}
+  summary::after{content:"+";color:var(--g);font-weight:800;font-size:1.3rem;line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--muted);margin-top:8px}
+  .band{position:relative;color:#fff;text-align:center;padding:90px 22px;background:url("https://static.wixstatic.com/media/5c1476_f6535ff97e1a49fb98add268cd5fce53~mv2.png/v1/fill/w_1600,h_700,al_c,q_80/band.jpg") center/cover}
+  .band::before{content:"";position:absolute;inset:0;background:rgba(20,45,20,.78)}
+  .band>*{position:relative}
+  .band h2{font-size:clamp(1.8rem,3.2vw,2.5rem);letter-spacing:-.02em}
+  .band p{opacity:.9;margin:10px 0 24px}
+  .band .btn{background:var(--sun);color:#3a2a00;flex:none;padding:14px 30px}
+  footer{background:#0f1d10;color:#c6d3c6;padding:56px 0 26px;font-size:.93rem}
+  footer .cols{display:grid;grid-template-columns:1.1fr 1fr 1.3fr;gap:34px}
+  footer h4{color:#fff;margin-bottom:10px}
+  footer a{color:#fff}
+  footer iframe{width:100%;height:200px;border:0;border-radius:12px}
+  .fine{margin-top:34px;padding-top:18px;border-top:1px solid #243424;font-size:.82rem;opacity:.75;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  .mbar{display:none}
+  @media(max-width:900px){
+    nav a:not(.call){display:none}
+    .hero .wrap,.split,footer .cols{grid-template-columns:1fr}
+    .grid,.steps{grid-template-columns:1fr 1fr}
+    .reviews{grid-template-columns:1fr}
+    .trust .wrap{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:600px){
+    .grid,.steps{grid-template-columns:1fr}
+    .bbb,.brand small{display:none}
+    .call{padding:8px 13px;font-size:.85rem}
+    body{padding-bottom:64px}
+    .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;box-shadow:0 -6px 20px rgba(0,0,0,.15)}
+    .mbar a{padding:16px;text-align:center;font-weight:700;text-decoration:none}
+    .mbar a:first-child{background:#fff;color:var(--g-d)}
+    .mbar a:last-child{background:var(--g);color:#fff}
+  }
 </style>
 </head>
 <body>
-<div class="notice">🍂 Now scheduling FALL cleanups &amp; booking next year's fertilization — get your free estimate below.</div>
+<div class="notice">🍂 Now booking FALL cleanups &amp; next year's fertilization — spots fill fast.</div>
 <header><div class="wrap">
-  <div class="logo">Smith Family Services<small>Lawn care &amp; property services · Muncie, IN</small></div>
-  <nav><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#commercial">Commercial</a><a class="call" href="tel:17652730556">📞 (765) 273-0556</a></nav>
+  <a class="brand" href="#top"><div><b>Smith Family Services</b><small>Lawn care &amp; property services · Muncie, IN</small></div></a>
+  <nav>
+    <a href="#services">Services</a><a href="#commercial">Commercial</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a>
+    <img class="bbb" src="https://static.wixstatic.com/media/5c1476_b052dcc435724d1192bb1525abf71908~mv2.png/v1/fill/w_166,h_76,al_c,q_85/bbb.png" alt="BBB Accredited Business">
+    <a class="call" href="tel:17652730556">📞 (765) 273-0556</a>
+  </nav>
 </div></header>
 
-<div class="hero"><div class="wrap">
+<div class="hero" id="top"><div class="wrap">
   <div>
-    <h1>Muncie's family-owned lawn &amp; property care team.</h1>
-    <p class="lead">From weekly mowing to fall cleanups, gutters and snow removal — we're your neighbors, and we treat your property like our own.</p>
+    <span class="eyebrow">Family owned · Serving Muncie &amp; surrounding communities</span>
+    <h1>A yard you're proud of — without lifting a finger.</h1>
+    <p class="lead">Mowing, cleanups, landscaping, gutters and snow removal for homes and businesses. One local family, one call, everything handled.</p>
     <ul class="checks">
-      <li>Residential, commercial &amp; municipal properties</li>
-      <li>SERVICE-AUTOPILOT: hassle-free monthly auto payments</li>
-      <li>We spot small problems before they get expensive</li>
       <li>Free estimates — no pressure, no obligation</li>
+      <li>SERVICE-AUTOPILOT: set it once, easy monthly auto-pay</li>
+      <li>We flag small problems before they get expensive</li>
+      <li>Switching providers? We'll find a way to save you up to 25%</li>
     </ul>
-    <div class="save">💰 Switching providers? We'll review your current service and find a way to save you up to 25%.</div>
   </div>
 
   <form class="est" id="est" onsubmit="return false">
-    <h2>Get a free estimate</h2>
-    <div class="sub">Takes about 60 seconds. We'll get back to you within 1 business day.</div>
-    <div class="steps"><span class="on"></span><span></span><span></span></div>
+    <h2>Get your free estimate</h2>
+    <div class="sub">About 60 seconds. We reply within 1 business day.</div>
+    <div class="bar"><span class="on"></span><span></span><span></span></div>
 
     <div class="step on" data-s="1">
       <label>What do you need help with?</label>
-      <div class="opts" data-group="svc">
+      <div class="opts">
         <button type="button" class="opt">🌱 Weekly mowing</button>
         <button type="button" class="opt">🍂 Fall / spring cleanup</button>
         <button type="button" class="opt">🌿 Landscaping &amp; mulch</button>
@@ -108,14 +176,14 @@
 
     <div class="step" data-s="2">
       <label>Property type</label>
-      <div class="opts" data-group="prop">
+      <div class="opts">
         <button type="button" class="opt">🏡 Home</button>
-        <button type="button" class="opt">🏢 Business / commercial</button>
+        <button type="button" class="opt">🏢 Business / HOA / municipal</button>
       </div>
       <label>Property address</label><input placeholder="123 Main St, Muncie">
-      <label>Tell us a bit more (optional)</label><textarea placeholder="e.g. Corner lot, about half an acre, lots of oak leaves"></textarea>
-      <label>Photos (optional)</label><input type="file" accept="image/*" multiple>
-      <div class="row"><button type="button" class="btn back" onclick="go(1)">←</button><button type="button" class="btn" onclick="go(3)">Next →</button></div>
+      <label>Anything we should know? (optional)</label><textarea placeholder="e.g. Corner lot, about half an acre, lots of oak leaves"></textarea>
+      <label>Add photos (optional)</label><input type="file" accept="image/*" multiple>
+      <div class="row"><button type="button" class="btn ghost" onclick="go(1)">←</button><button type="button" class="btn" onclick="go(3)">Next →</button></div>
     </div>
 
     <div class="step" data-s="3">
@@ -123,52 +191,82 @@
       <label>Phone</label><input type="tel" placeholder="(765) 555-0123">
       <label>Email (optional)</label><input type="email" placeholder="you@email.com">
       <label>Best way to reach you</label><select><option>Text me</option><option>Call me</option><option>Email me</option></select>
-      <div class="row"><button type="button" class="btn back" onclick="go(2)">←</button><button type="button" class="btn" onclick="go(4)">Send my request</button></div>
+      <div class="row"><button type="button" class="btn ghost" onclick="go(2)">←</button><button type="button" class="btn" onclick="go(4)">Send my request</button></div>
     </div>
 
-    <div class="step" data-s="4"><div class="done"><div class="big">✅</div><h2>Thanks — request received!</h2><p class="sub">A member of the Smith family will reach out within 1 business day.</p></div></div>
+    <div class="step" data-s="4"><div class="done"><div class="big">✅</div><h2>Request received!</h2><p class="sub">A member of the Smith family will reach out within 1 business day.</p></div></div>
   </form>
 </div></div>
 
+<div class="trust"><div class="wrap">
+  <div>BBB Accredited<span>Trusted local business</span></div>
+  <div>Family owned<span>Talk to a Smith, not a call center</span></div>
+  <div>Free estimates<span>Fast, honest quotes</span></div>
+  <div>Auto-pay plans<span>Set it and forget it</span></div>
+</div></div>
+
 <section id="services"><div class="wrap">
-  <h2 class="t">What we do</h2>
-  <p class="t">One local team for everything outside your home or business.</p>
+  <div class="head"><div class="k">Services</div><h2>Everything outside your home, handled</h2><p>One dependable local team for the whole property — from the grass to the gutters.</p></div>
   <div class="grid">
-    <div class="card"><div class="ico">🌱</div><h3>Lawn Care</h3><p>Mowing, seeding, weeding and fertilization programs that keep your yard the envy of the neighborhood.</p></div>
-    <div class="card"><div class="ico">🍂</div><h3>Seasonal Cleanups</h3><p>Spring and fall cleanups, leaf removal and overgrowth management.</p></div>
-    <div class="card"><div class="ico">🌿</div><h3>Landscaping</h3><p>Mulching, planting and property projects that got a little out of hand.</p></div>
-    <div class="card"><div class="ico">🏠</div><h3>Exterior Maintenance</h3><p>Gutter cleaning, pressure washing, deck maintenance and light exterior repairs.</p></div>
-    <div class="card"><div class="ico">❄️</div><h3>Snow Removal</h3><p>Reliable winter service for driveways, lots and walkways.</p></div>
-    <div class="card"><div class="ico">📅</div><h3>Maintenance Programs</h3><p>Set it and forget it with SERVICE-AUTOPILOT and easy monthly payments.</p></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/5c1476_e72b5db2ef494d37bf2d4f9095c0570c~mv2.jpg/v1/fill/w_720,h_420,al_c,q_80/mowing.jpg" alt="Mowing"><div class="b"><h3>Weekly Mowing</h3><p>Clean lines, trimmed edges and a lawn that looks sharp all season.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/5c1476_f6535ff97e1a49fb98add268cd5fce53~mv2.png/v1/fill/w_720,h_420,al_c,q_80/cleanup.jpg" alt="Fall cleanup"><div class="b"><h3>Fall &amp; Spring Cleanups</h3><p>Leaf removal, bed cleanup and overgrowth management — leaf it to us.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/5c1476_608b8857f7b442bdafb2daf349fb7cfe~mv2.jpg/v1/fill/w_720,h_420,al_c,q_80/mulch.jpg" alt="Landscaping and mulch"><div class="b"><h3>Landscaping &amp; Mulch</h3><p>Fresh mulch, planting, weeding and beds that make the whole house pop.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/90a441_e71b1a9b724441cda665df54172d7a22~mv2.jpg/v1/fill/w_720,h_420,al_c,q_80/deck.jpg" alt="Deck refinishing project"><div class="b"><h3>Decks &amp; Pressure Washing</h3><p>Washing, staining and deck maintenance — like this refinishing project.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/11062b_1368fb4e94f647d2b467b0a941749dd3~mv2.jpg/v1/fill/w_720,h_420,al_c,q_80/turf.jpg" alt="Laying new turf"><div class="b"><h3>Seeding &amp; New Turf</h3><p>Seeding, sod and fertilization programs for thick, healthy grass.</p></div></div>
+    <div class="svc more"><h3>Plus everything else</h3><ul><li>Gutter cleaning &amp; repair</li><li>Snow removal</li><li>Fertilization programs</li><li>Light exterior home maintenance</li><li>Seasonal maintenance plans</li></ul></div>
   </div>
 </div></section>
 
 <section id="commercial" class="alt"><div class="wrap">
-  <h2 class="t">Commercial &amp; municipal property care</h2>
-  <p class="t">Property managers, municipalities and business owners: let us take exterior care off your to-do list.</p>
-  <div class="grid">
-    <div class="card"><h3>Large-scale care</h3><p>Mowing, landscaping and snow removal for commercial lots, campuses and public grounds.</p></div>
-    <div class="card"><h3>One point of contact</h3><p>A family member or hand-selected team lead you can actually talk to.</p></div>
-    <div class="card"><h3>Free on-site estimate</h3><p>We'll walk the property, review your current contract and show you where you can save.</p></div>
+  <div class="head"><div class="k">Who we serve</div><h2>Homes, businesses &amp; municipalities</h2><p>Same family, same care — whether it's your backyard or a 20-acre campus.</p></div>
+  <div class="split">
+    <div class="panel"><img src="https://static.wixstatic.com/media/47984d8b72893e02859e3d00c4a37341.jpg/v1/fill/w_1000,h_720,al_c,q_80/res.jpg" alt="Residential"><div class="c"><h3>Residential</h3><p>We live here too. Expect a local handshake, flexible scheduling and a team that notices the little things.</p><a href="#est">Get a home estimate</a></div></div>
+    <div class="panel"><img src="https://static.wixstatic.com/media/11062b_5720caf3bf7b4ae089eb50be993fb8c0~mv2.jpg/v1/fill/w_1000,h_720,al_c,q_80/com.jpg" alt="Commercial"><div class="c"><h3>Commercial &amp; Municipal</h3><p>Property managers and municipalities: put exterior care on SERVICE-AUTOPILOT and take it off your to-do list.</p><a href="#est">Request a site walk</a></div></div>
   </div>
 </div></section>
 
-<section id="reviews"><div class="wrap">
-  <h2 class="t">What our neighbors say</h2>
-  <p class="t">Reviews from our customers on Nextdoor.</p>
-  <div class="grid">
-    <div class="q"><p>"Steve and his family did a great job for us last year, our first in Indiana. They are flexible, willing to do about anything you might want done to your yard… I highly recommend them."</p><b>Thomas Strack</b><span>via Nextdoor</span></div>
-    <div class="q"><p>"The Smith family has mowed my lawn for 4 or 5 years. They've also done other outside work including washing and staining my deck, cleaning and fixing gutters… They are excellent."</p><b>Sue Errington</b><span>via Nextdoor</span></div>
-    <div class="q"><p>"Not only does my lawn always look good, but I have been alerted to several maintenance issues before they became major problems."</p><b>Claudia Younkvich</b><span>via Nextdoor</span></div>
+<section><div class="wrap">
+  <div class="head"><div class="k">How it works</div><h2>Three steps to a yard you don't think about</h2></div>
+  <div class="steps">
+    <div class="st"><h3>Tell us what you need</h3><p>Fill out the 60-second form or give us a call. Photos help but aren't required.</p></div>
+    <div class="st"><h3>Get a free, honest quote</h3><p>We'll review the property (and your current provider's price) and send a simple plan.</p></div>
+    <div class="st"><h3>Relax on autopilot</h3><p>We show up, do it right, and bill monthly. You just enjoy the view.</p></div>
+  </div>
+</div></section>
+
+<section id="reviews" class="alt"><div class="wrap">
+  <div class="head"><div class="k">Reviews</div><h2>What our neighbors say</h2><p>Real reviews from customers on Nextdoor.</p></div>
+  <div class="reviews">
+    <div class="q"><div class="stars">★★★★★</div><p>"Steve and his family did a great job for us last year, our first in Indiana. They are flexible, willing to do about anything you might want done to your yard to make it look just right, and are reasonably priced. I highly recommend them."</p><b>Thomas Strack</b><span>via Nextdoor</span></div>
+    <div class="q"><div class="stars">★★★★★</div><p>"The Smith family has mowed my lawn for 4 or 5 years. They've also done other outside work including washing and staining my deck, cleaning and fixing gutters, adding a gate to my fence… They are excellent."</p><b>Sue Errington</b><span>via Nextdoor</span></div>
+    <div class="q"><div class="stars">★★★★★</div><p>"Not only does my lawn always look good, but I have been alerted to several maintenance issues before they became major problems… they help me care for my house too."</p><b>Claudia Younkvich</b><span>via Nextdoor</span></div>
+    <div class="q"><div class="stars">★★★★★</div><p>"Smith Family Services are top notch in my book. Last year they did all my mowing at a reasonable price and did a fantastic job."</p><b>Sharon Reason</b><span>via Nextdoor</span></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="head"><div class="k">FAQ</div><h2>Common questions</h2></div>
+  <div class="faq">
+    <details open><summary>Are estimates really free?</summary><p>Yes. We'll look at your property and give you a clear price with no obligation.</p></details>
+    <details><summary>What is SERVICE-AUTOPILOT?</summary><p>It's our maintenance plan: we schedule the work, you get hassle-free automatic monthly payments, and you never have to remember to call.</p></details>
+    <details><summary>Can you beat my current provider's price?</summary><p>Send us what you're paying now. We'll review the service and find a way to save you up to 25% where we can.</p></details>
+    <details><summary>Do you handle commercial and municipal properties?</summary><p>Yes — mowing, landscaping and snow removal for businesses, property managers and government entities.</p></details>
+    <details><summary>What areas do you serve?</summary><p>Muncie and the surrounding communities. Not sure if you're in range? Just ask.</p></details>
   </div>
 </div></section>
 
 <div class="band"><h2>Ready for a yard you don't have to think about?</h2><p>Estimates are always free. Simple, low-hassle, affordable.</p><a class="btn" href="#est">Get my free estimate</a></div>
 
 <footer><div class="wrap">
-  <div><b>Smith Family Services LLC</b><br>1315 West Jackson Street, Muncie, IN<br><a href="tel:17652730556">(765) 273-0556</a></div>
-  <div>© 2026 Smith Family Services LLC<br><em>Concept mockup prepared by Jason Shen — not the live site.</em></div>
+  <div class="cols">
+    <div><h4>Smith Family Services LLC</h4><p>Locally owned lawn care &amp; property services. Commercial, municipal and residential.</p><p style="margin-top:10px">1315 West Jackson Street<br>Muncie, IN</p></div>
+    <div><h4>Contact</h4><p><a href="tel:17652730556">(765) 273-0556</a><br><a href="mailto:smithfamilyservices2021@gmail.com">smithfamilyservices2021@gmail.com</a></p><p style="margin-top:10px"><a href="https://www.facebook.com/SmithFamilyServices">Facebook</a></p></div>
+    <div><iframe loading="lazy" src="https://maps.google.com/maps?q=1315%20West%20Jackson%20Street%2C%20Muncie%2C%20IN&amp;z=14&amp;output=embed" title="Map"></iframe></div>
+  </div>
+  <div class="fine"><span>© 2026 Smith Family Services LLC</span><em>Concept redesign prepared by Jason Shen — not the live site.</em></div>
 </div></footer>
+
+<div class="mbar"><a href="tel:17652730556">📞 Call</a><a href="#est">Free estimate</a></div>
 
 <script>
 document.querySelectorAll('.opts').forEach(g=>g.addEventListener('click',e=>{
@@ -177,7 +275,7 @@ document.querySelectorAll('.opts').forEach(g=>g.addEventListener('click',e=>{
 }));
 function go(n){
   document.querySelectorAll('.step').forEach(s=>s.classList.toggle('on',s.dataset.s==n));
-  document.querySelectorAll('.steps span').forEach((s,i)=>s.classList.toggle('on',i<Math.min(n,3)));
+  document.querySelectorAll('.bar span').forEach((s,i)=>s.classList.toggle('on',i<Math.min(n,3)));
 }
 </script>
 </body>
