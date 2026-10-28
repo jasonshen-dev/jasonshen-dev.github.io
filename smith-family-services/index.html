@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smith Family Services — Lawn Care & Property Services in Muncie, IN</title>
+<style>
+  :root{--g:#2f6b2f;--g2:#e8f3e3;--ink:#1c2a1c;--muted:#5d6b5d;--line:#dfe7dc;--sun:#f2b630}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+  .notice{background:var(--sun);color:#3a2a00;text-align:center;font-size:.9rem;padding:8px 12px;font-weight:600}
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+  .logo{font-weight:800;font-size:1.2rem;color:var(--g)}
+  .logo small{display:block;font-weight:500;font-size:.75rem;color:var(--muted)}
+  nav a{margin-left:20px;color:var(--ink);text-decoration:none;font-size:.95rem}
+  .call{background:var(--g);color:#fff!important;padding:10px 18px;border-radius:999px;font-weight:600}
+  .hero{background:linear-gradient(120deg,var(--g2),#fff 65%);padding:64px 0}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:start}
+  .hero h1{font-size:clamp(2rem,4vw,2.9rem);line-height:1.12}
+  .hero p.lead{font-size:1.12rem;color:var(--muted);margin:16px 0 22px}
+  .checks{list-style:none;display:grid;gap:8px}
+  .checks li::before{content:"✓";color:var(--g);font-weight:800;margin-right:8px}
+  .save{display:inline-block;margin-top:22px;background:#fff;border:2px dashed var(--g);border-radius:12px;padding:12px 16px;font-weight:600}
+  /* estimate form */
+  .est{background:#fff;border-radius:18px;padding:26px;box-shadow:0 20px 50px rgba(47,107,47,.18)}
+  .est h2{font-size:1.35rem}
+  .est .sub{color:var(--muted);font-size:.92rem;margin-bottom:14px}
+  .steps{display:flex;gap:6px;margin-bottom:16px}
+  .steps span{flex:1;height:6px;border-radius:9px;background:var(--line)}
+  .steps span.on{background:var(--g)}
+  .step{display:none}.step.on{display:block}
+  .opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .opt{border:1.5px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;font-size:.93rem;text-align:left;background:#fff}
+  .opt.sel{border-color:var(--g);background:var(--g2);font-weight:600}
+  label{display:block;font-size:.85rem;color:var(--muted);margin:12px 0 4px}
+  input,textarea,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font:inherit}
+  textarea{min-height:80px}
+  .row{display:flex;gap:10px;margin-top:18px}
+  .btn{flex:1;background:var(--g);color:#fff;border:0;border-radius:10px;padding:13px;font-weight:700;font-size:1rem;cursor:pointer;text-decoration:none;text-align:center;display:inline-block}
+  .btn.back{background:#fff;color:var(--g);border:1.5px solid var(--g);flex:0 0 90px}
+  .done{text-align:center;padding:30px 0}
+  .done .big{font-size:3rem}
+  section{padding:68px 0}
+  h2.t{font-size:2rem;text-align:center}
+  p.t{text-align:center;color:var(--muted);max-width:620px;margin:8px auto 38px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .card{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff}
+  .card .ico{font-size:1.8rem}
+  .card h3{margin:6px 0}
+  .card p,.card li{color:var(--muted);font-size:.95rem}
+  .card ul{padding-left:18px}
+  .alt{background:#f6faf4}
+  .q{background:#fff;border-radius:16px;padding:22px;border:1px solid var(--line)}
+  .q p{font-style:italic}
+  .q b{display:block;margin-top:10px;font-size:.9rem}
+  .q span{color:var(--muted);font-size:.82rem}
+  .band{background:var(--g);color:#fff;text-align:center;padding:54px 20px}
+  .band h2{font-size:2rem}
+  .band p{opacity:.9;margin:8px 0 20px}
+  .band .btn{background:#fff;color:var(--g);flex:none;padding:13px 28px}
+  footer{padding:28px 0;font-size:.88rem;color:var(--muted)}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .call{white-space:nowrap}
+  @media(max-width:860px){.hero .wrap{grid-template-columns:1fr}nav a:not(.call){display:none}}
+  @media(max-width:480px){.logo{font-size:1rem}.logo small{display:none}.call{padding:8px 12px;font-size:.85rem}}
+</style>
+</head>
+<body>
+<div class="notice">🍂 Now scheduling FALL cleanups &amp; booking next year's fertilization — get your free estimate below.</div>
+<header><div class="wrap">
+  <div class="logo">Smith Family Services<small>Lawn care &amp; property services · Muncie, IN</small></div>
+  <nav><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#commercial">Commercial</a><a class="call" href="tel:17652730556">📞 (765) 273-0556</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>Muncie's family-owned lawn &amp; property care team.</h1>
+    <p class="lead">From weekly mowing to fall cleanups, gutters and snow removal — we're your neighbors, and we treat your property like our own.</p>
+    <ul class="checks">
+      <li>Residential, commercial &amp; municipal properties</li>
+      <li>SERVICE-AUTOPILOT: hassle-free monthly auto payments</li>
+      <li>We spot small problems before they get expensive</li>
+      <li>Free estimates — no pressure, no obligation</li>
+    </ul>
+    <div class="save">💰 Switching providers? We'll review your current service and find a way to save you up to 25%.</div>
+  </div>
+
+  <form class="est" id="est" onsubmit="return false">
+    <h2>Get a free estimate</h2>
+    <div class="sub">Takes about 60 seconds. We'll get back to you within 1 business day.</div>
+    <div class="steps"><span class="on"></span><span></span><span></span></div>
+
+    <div class="step on" data-s="1">
+      <label>What do you need help with?</label>
+      <div class="opts" data-group="svc">
+        <button type="button" class="opt">🌱 Weekly mowing</button>
+        <button type="button" class="opt">🍂 Fall / spring cleanup</button>
+        <button type="button" class="opt">🌿 Landscaping &amp; mulch</button>
+        <button type="button" class="opt">🏠 Gutters &amp; pressure washing</button>
+        <button type="button" class="opt">❄️ Snow removal</button>
+        <button type="button" class="opt">🔧 Something else</button>
+      </div>
+      <div class="row"><button type="button" class="btn" onclick="go(2)">Next →</button></div>
+    </div>
+
+    <div class="step" data-s="2">
+      <label>Property type</label>
+      <div class="opts" data-group="prop">
+        <button type="button" class="opt">🏡 Home</button>
+        <button type="button" class="opt">🏢 Business / commercial</button>
+      </div>
+      <label>Property address</label><input placeholder="123 Main St, Muncie">
+      <label>Tell us a bit more (optional)</label><textarea placeholder="e.g. Corner lot, about half an acre, lots of oak leaves"></textarea>
+      <label>Photos (optional)</label><input type="file" accept="image/*" multiple>
+      <div class="row"><button type="button" class="btn back" onclick="go(1)">←</button><button type="button" class="btn" onclick="go(3)">Next →</button></div>
+    </div>
+
+    <div class="step" data-s="3">
+      <label>Your name</label><input placeholder="Jane Smith">
+      <label>Phone</label><input type="tel" placeholder="(765) 555-0123">
+      <label>Email (optional)</label><input type="email" placeholder="you@email.com">
+      <label>Best way to reach you</label><select><option>Text me</option><option>Call me</option><option>Email me</option></select>
+      <div class="row"><button type="button" class="btn back" onclick="go(2)">←</button><button type="button" class="btn" onclick="go(4)">Send my request</button></div>
+    </div>
+
+    <div class="step" data-s="4"><div class="done"><div class="big">✅</div><h2>Thanks — request received!</h2><p class="sub">A member of the Smith family will reach out within 1 business day.</p></div></div>
+  </form>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2 class="t">What we do</h2>
+  <p class="t">One local team for everything outside your home or business.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">🌱</div><h3>Lawn Care</h3><p>Mowing, seeding, weeding and fertilization programs that keep your yard the envy of the neighborhood.</p></div>
+    <div class="card"><div class="ico">🍂</div><h3>Seasonal Cleanups</h3><p>Spring and fall cleanups, leaf removal and overgrowth management.</p></div>
+    <div class="card"><div class="ico">🌿</div><h3>Landscaping</h3><p>Mulching, planting and property projects that got a little out of hand.</p></div>
+    <div class="card"><div class="ico">🏠</div><h3>Exterior Maintenance</h3><p>Gutter cleaning, pressure washing, deck maintenance and light exterior repairs.</p></div>
+    <div class="card"><div class="ico">❄️</div><h3>Snow Removal</h3><p>Reliable winter service for driveways, lots and walkways.</p></div>
+    <div class="card"><div class="ico">📅</div><h3>Maintenance Programs</h3><p>Set it and forget it with SERVICE-AUTOPILOT and easy monthly payments.</p></div>
+  </div>
+</div></section>
+
+<section id="commercial" class="alt"><div class="wrap">
+  <h2 class="t">Commercial &amp; municipal property care</h2>
+  <p class="t">Property managers, municipalities and business owners: let us take exterior care off your to-do list.</p>
+  <div class="grid">
+    <div class="card"><h3>Large-scale care</h3><p>Mowing, landscaping and snow removal for commercial lots, campuses and public grounds.</p></div>
+    <div class="card"><h3>One point of contact</h3><p>A family member or hand-selected team lead you can actually talk to.</p></div>
+    <div class="card"><h3>Free on-site estimate</h3><p>We'll walk the property, review your current contract and show you where you can save.</p></div>
+  </div>
+</div></section>
+
+<section id="reviews"><div class="wrap">
+  <h2 class="t">What our neighbors say</h2>
+  <p class="t">Reviews from our customers on Nextdoor.</p>
+  <div class="grid">
+    <div class="q"><p>"Steve and his family did a great job for us last year, our first in Indiana. They are flexible, willing to do about anything you might want done to your yard… I highly recommend them."</p><b>Thomas Strack</b><span>via Nextdoor</span></div>
+    <div class="q"><p>"The Smith family has mowed my lawn for 4 or 5 years. They've also done other outside work including washing and staining my deck, cleaning and fixing gutters… They are excellent."</p><b>Sue Errington</b><span>via Nextdoor</span></div>
+    <div class="q"><p>"Not only does my lawn always look good, but I have been alerted to several maintenance issues before they became major problems."</p><b>Claudia Younkvich</b><span>via Nextdoor</span></div>
+  </div>
+</div></section>
+
+<div class="band"><h2>Ready for a yard you don't have to think about?</h2><p>Estimates are always free. Simple, low-hassle, affordable.</p><a class="btn" href="#est">Get my free estimate</a></div>
+
+<footer><div class="wrap">
+  <div><b>Smith Family Services LLC</b><br>1315 West Jackson Street, Muncie, IN<br><a href="tel:17652730556">(765) 273-0556</a></div>
+  <div>© 2026 Smith Family Services LLC<br><em>Concept mockup prepared by Jason Shen — not the live site.</em></div>
+</div></footer>
+
+<script>
+document.querySelectorAll('.opts').forEach(g=>g.addEventListener('click',e=>{
+  const b=e.target.closest('.opt'); if(!b) return;
+  g.querySelectorAll('.opt').forEach(o=>o.classList.remove('sel')); b.classList.add('sel');
+}));
+function go(n){
+  document.querySelectorAll('.step').forEach(s=>s.classList.toggle('on',s.dataset.s==n));
+  document.querySelectorAll('.steps span').forEach((s,i)=>s.classList.toggle('on',i<Math.min(n,3)));
+}
+</script>
+</body>
+</html>
