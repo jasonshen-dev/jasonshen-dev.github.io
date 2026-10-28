@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riverside Family Dental — Gentle Care for the Whole Family</title>
+<meta name="description" content="Family, cosmetic and emergency dentistry. New patients welcome. Request an appointment online.">
+<style>
+  :root{--teal:#0f766e;--teal-l:#ccfbf1;--ink:#0f172a;--muted:#64748b;--bg:#f8fafc;--line:#e2e8f0}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .topbar{background:var(--teal);color:#fff;font-size:.88rem;padding:8px 0}
+  .topbar .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+  header{border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:5}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 20px}
+  .logo{font-weight:800;font-size:1.25rem;color:var(--teal)}
+  nav a{margin-left:22px;color:var(--ink);text-decoration:none;font-size:.95rem}
+  .btn{display:inline-block;background:var(--teal);color:#fff;padding:12px 22px;border-radius:999px;text-decoration:none;font-weight:600;border:0;cursor:pointer;font-size:1rem}
+  .btn.light{background:#fff;color:var(--teal)}
+  .hero{background:linear-gradient(135deg,var(--teal-l),#fff 70%);padding:80px 0}
+  .hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center}
+  .hero h1{font-size:clamp(2rem,4.2vw,3.1rem);line-height:1.1}
+  .hero p{color:var(--muted);font-size:1.12rem;margin:16px 0 26px}
+  .badges{display:flex;gap:18px;margin-top:26px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+  .badges b{color:var(--ink)}
+  .hero-card{background:#fff;border-radius:18px;padding:28px;box-shadow:0 20px 50px rgba(15,118,110,.15)}
+  .hero-card h3{margin-bottom:14px}
+  label{display:block;font-size:.85rem;color:var(--muted);margin:10px 0 4px}
+  input,select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font-size:.95rem}
+  .hero-card .btn{width:100%;margin-top:16px}
+  #ok{display:none;margin-top:12px;color:var(--teal);font-weight:600}
+  section{padding:70px 0}
+  h2{font-size:2rem;text-align:center}
+  .sub{text-align:center;color:var(--muted);margin:8px auto 40px;max-width:600px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+  .svc{border:1px solid var(--line);border-radius:16px;padding:26px;transition:.2s}
+  .svc:hover{border-color:var(--teal);transform:translateY(-3px)}
+  .svc .ico{font-size:1.8rem}
+  .svc h3{margin:8px 0 6px}
+  .svc p{color:var(--muted);font-size:.95rem}
+  .alt{background:var(--bg)}
+  .review{background:#fff;border-radius:16px;padding:24px;border:1px solid var(--line)}
+  .stars{color:#f59e0b;letter-spacing:2px}
+  .review p{margin:10px 0;font-style:italic}
+  .review span{color:var(--muted);font-size:.88rem}
+  .info{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+  .info h3{margin-bottom:8px}
+  .info table{width:100%;font-size:.95rem}
+  .info td{padding:4px 0}
+  .info td:last-child{text-align:right;color:var(--muted)}
+  .map{background:var(--teal-l);border-radius:16px;min-height:220px;display:flex;align-items:center;justify-content:center;color:var(--teal);font-weight:600}
+  .band{background:var(--teal);color:#fff;text-align:center;padding:56px 20px}
+  .band h2{color:#fff}
+  .band p{opacity:.9;margin:10px 0 22px}
+  footer{padding:26px 0;text-align:center;color:var(--muted);font-size:.85rem}
+  @media(max-width:820px){.hero .wrap{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span>📞 (555) 014-2290</span><span>Mon–Fri 8am–6pm · Sat 9am–2pm</span><span>Emergency? Same-day appointments available</span></div></div>
+<header><div class="wrap">
+  <div class="logo">🦷 Riverside Family Dental</div>
+  <nav><a href="#services">Services</a><a href="#reviews">Reviews</a><a href="#visit">Visit Us</a><a class="btn" href="#book" style="margin-left:22px;color:#fff">Book Now</a></nav>
+</div></header>
+
+<div class="hero" id="book"><div class="wrap">
+  <div>
+    <h1>Gentle dental care for your whole family.</h1>
+    <p>From first checkups to confident smiles — modern dentistry in a calm, friendly office. New patients welcome, most insurance accepted.</p>
+    <a class="btn" href="#services">Explore services</a>
+    <div class="badges"><div><b>4.9★</b> from 300+ reviews</div><div><b>20+ years</b> serving Riverside</div><div><b>Most PPO</b> plans accepted</div></div>
+  </div>
+  <form class="hero-card" onsubmit="event.preventDefault();document.getElementById('ok').style.display='block';this.reset()">
+    <h3>Request an appointment</h3>
+    <label>Full name</label><input required placeholder="Jane Smith">
+    <label>Phone</label><input required type="tel" placeholder="(555) 123-4567">
+    <label>Reason for visit</label>
+    <select><option>Checkup & cleaning</option><option>Tooth pain / emergency</option><option>Whitening</option><option>Invisalign consult</option><option>Other</option></select>
+    <label>Preferred day</label><input type="date">
+    <button class="btn" type="submit">Request appointment</button>
+    <div id="ok">✓ Thanks! We'll call you within 1 business hour.</div>
+  </form>
+</div></div>
+
+<section id="services"><div class="wrap">
+  <h2>Our services</h2>
+  <p class="sub">Everything your family needs, under one roof.</p>
+  <div class="grid">
+    <div class="svc"><div class="ico">🪥</div><h3>Cleanings & Exams</h3><p>Thorough, gentle preventive care with digital X-rays.</p></div>
+    <div class="svc"><div class="ico">👧</div><h3>Kids' Dentistry</h3><p>Fun, fear-free visits that build healthy habits early.</p></div>
+    <div class="svc"><div class="ico">✨</div><h3>Whitening & Cosmetic</h3><p>Brighter smiles with in-office and take-home whitening.</p></div>
+    <div class="svc"><div class="ico">😁</div><h3>Invisalign®</h3><p>Clear aligners for straighter teeth without metal braces.</p></div>
+    <div class="svc"><div class="ico">🦷</div><h3>Crowns & Implants</h3><p>Durable, natural-looking restorations that last.</p></div>
+    <div class="svc"><div class="ico">🚑</div><h3>Emergency Care</h3><p>Same-day appointments for pain, chips and broken teeth.</p></div>
+  </div>
+</div></section>
+
+<section id="reviews" class="alt"><div class="wrap">
+  <h2>What patients say</h2>
+  <p class="sub">Your best Google reviews, front and center.</p>
+  <div class="grid">
+    <div class="review"><div class="stars">★★★★★</div><p>"The most relaxed I've ever felt at a dentist. The team explained everything."</p><span>— Patient review</span></div>
+    <div class="review"><div class="stars">★★★★★</div><p>"Got in the same day with a cracked tooth. Fast, painless, and kind."</p><span>— Patient review</span></div>
+    <div class="review"><div class="stars">★★★★★</div><p>"My kids actually look forward to their checkups now."</p><span>— Patient review</span></div>
+  </div>
+</div></section>
+
+<section id="visit"><div class="wrap">
+  <h2>Visit us</h2>
+  <p class="sub">Free parking · Wheelchair accessible</p>
+  <div class="info">
+    <div><h3>Hours</h3><table>
+      <tr><td>Monday – Friday</td><td>8:00am – 6:00pm</td></tr>
+      <tr><td>Saturday</td><td>9:00am – 2:00pm</td></tr>
+      <tr><td>Sunday</td><td>Closed</td></tr></table>
+      <h3 style="margin-top:20px">Insurance</h3><p style="color:var(--muted)">Delta Dental, Cigna, Aetna, MetLife, Guardian and most PPO plans. Flexible payment plans available.</p></div>
+    <div class="map">📍 Google Map embed goes here</div>
+  </div>
+</div></section>
+
+<div class="band"><h2>Ready for a healthier smile?</h2><p>New patients get a free whitening kit with their first cleaning.</p><a class="btn light" href="#book">Book your visit</a></div>
+
+<footer>© 2026 Riverside Family Dental · Concept design — not a real practice</footer>
+</body>
+</html>
