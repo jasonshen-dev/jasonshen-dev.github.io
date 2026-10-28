@@ -5,155 +5,233 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>All Seasons Landscaping — Landscaping & Lawn Care in Central Indiana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root{--d:#16351f;--g:#3b7d3a;--l:#eef5ea;--ink:#18231a;--muted:#5f6d61;--line:#dde6da;--acc:#d9a441}
+  :root{--d:#13301c;--g:#3a7a39;--l:#eef5ea;--ink:#16211a;--muted:#5d6b60;--line:#dde6da;--acc:#f0a63a;--sky:#5bb8c9}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6}
-  .wrap{max-width:1140px;margin:0 auto;padding:0 20px}
-  header{position:absolute;inset:0 0 auto 0;z-index:5}
-  header .wrap{display:flex;justify-content:space-between;align-items:center;padding:18px 20px}
-  .logo{color:#fff;font-weight:800;font-size:1.25rem;letter-spacing:.3px}
-  .logo span{color:var(--acc)}
-  nav a{color:#fff;margin-left:22px;text-decoration:none;font-size:.95rem;opacity:.92}
-  nav .ph{background:var(--acc);color:var(--d);padding:9px 16px;border-radius:8px;font-weight:700;opacity:1}
-  .hero{background:linear-gradient(180deg,rgba(10,30,15,.55),rgba(10,30,15,.75)),
-        radial-gradient(circle at 20% 30%,#4f8f45,#1f4a27 70%);color:#fff;padding:130px 0 80px}
-  .hero .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:44px;align-items:center}
-  .hero h1{font-size:clamp(2.1rem,4.4vw,3.2rem);line-height:1.1}
-  .hero p{font-size:1.12rem;opacity:.9;margin:16px 0 18px}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6}
+  img{display:block;max-width:100%}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+  header{position:absolute;inset:0 0 auto 0;z-index:10}
+  header .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 22px}
+  .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}
+  .brand img{width:46px;height:46px;border-radius:50%;background:#000}
+  .brand b{font-weight:800;font-size:1.15rem;line-height:1.1}
+  .brand small{display:block;font-weight:500;font-size:.75rem;opacity:.8}
+  nav{display:flex;align-items:center;gap:24px}
+  nav a{color:#fff;text-decoration:none;font-size:.95rem;font-weight:500}
+  nav .ph{background:var(--acc);color:#2a1a00;padding:10px 18px;border-radius:9px;font-weight:700;white-space:nowrap}
+  .hero{position:relative;color:#fff;padding:140px 0 90px;background:url("https://static.wixstatic.com/media/580836_a81ad8bf66d340769dd092021ea72b97~mv2.jpg/v1/fill/w_1920,h_1100,al_c,q_80/hero.jpg") center/cover}
+  .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,24,12,.9) 0%,rgba(8,24,12,.7) 50%,rgba(8,24,12,.35) 100%)}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center}
+  .tag{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:5px 12px;border-radius:999px;font-size:.82rem;font-weight:600;margin-bottom:16px}
+  .hero h1{font-size:clamp(2.2rem,4.5vw,3.4rem);line-height:1.06;letter-spacing:-.02em}
+  .hero p{font-size:1.12rem;opacity:.92;margin:18px 0 16px;max-width:560px}
   .areas{font-size:.9rem;opacity:.8}
-  .stats{display:flex;gap:28px;margin-top:26px;flex-wrap:wrap}
-  .stats b{display:block;font-size:1.6rem;color:var(--acc)}
+  .stats{display:flex;gap:34px;margin-top:28px;flex-wrap:wrap}
+  .stats b{display:block;font-size:1.7rem;color:var(--acc);line-height:1.1}
   .stats span{font-size:.85rem;opacity:.85}
-  .quote{background:#fff;color:var(--ink);border-radius:16px;padding:26px;box-shadow:0 24px 60px rgba(0,0,0,.3)}
-  .quote h2{font-size:1.3rem}
-  .quote .sub{color:var(--muted);font-size:.9rem;margin-bottom:8px}
-  label{display:block;font-size:.84rem;color:var(--muted);margin:10px 0 4px}
+  .quote{background:#fff;color:var(--ink);border-radius:18px;padding:28px;box-shadow:0 30px 70px rgba(0,0,0,.35)}
+  .quote h2{font-size:1.35rem}
+  .quote .sub{color:var(--muted);font-size:.9rem;margin:4px 0 6px}
+  label{display:block;font-size:.84rem;color:var(--muted);margin:10px 0 4px;font-weight:500}
   input,select,textarea{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:9px;font:inherit}
   textarea{min-height:70px}
-  .btn{display:inline-block;background:var(--g);color:#fff;border:0;border-radius:9px;padding:13px 22px;font-weight:700;font-size:1rem;cursor:pointer;text-decoration:none}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .btn{display:inline-block;background:var(--g);color:#fff;border:0;border-radius:9px;padding:13px 22px;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+  .btn:hover{background:var(--d)}
   .quote .btn{width:100%;margin-top:14px}
   #ok{display:none;color:var(--g);font-weight:700;margin-top:10px;text-align:center}
-  section{padding:72px 0}
-  .t{text-align:center}
-  h2.t{font-size:2rem}
-  p.t{color:var(--muted);max-width:640px;margin:8px auto 40px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-  .svc{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff}
-  .svc .img{height:120px;display:flex;align-items:center;justify-content:center;font-size:2.6rem}
-  .svc .b{padding:20px}
-  .svc p{color:var(--muted);font-size:.95rem;margin-top:4px}
+  .strip{background:var(--d);color:#fff}
+  .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:18px 22px;text-align:center;font-weight:600;font-size:.95rem}
+  .strip span{display:block;font-weight:500;font-size:.8rem;opacity:.7}
+  section{padding:80px 0}
+  .head{text-align:center;max-width:660px;margin:0 auto 44px}
+  .head .k{color:var(--g);font-weight:700;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase}
+  .head h2{font-size:clamp(1.7rem,3vw,2.4rem);letter-spacing:-.02em;margin:6px 0 8px}
+  .head p{color:var(--muted)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .svc{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;transition:.2s}
+  .svc:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(20,48,28,.12)}
+  .svc img{height:200px;width:100%;object-fit:cover}
+  .svc .b{padding:20px 22px 24px}
+  .svc h3{font-size:1.1rem}
+  .svc p{color:var(--muted);font-size:.94rem;margin-top:6px}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+  .gallery figure{position:relative;border-radius:14px;overflow:hidden}
+  .gallery img{width:100%;height:100%;object-fit:cover;transition:.4s}
+  .gallery figure:hover img{transform:scale(1.05)}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:24px 14px 10px;color:#fff;font-size:.85rem;font-weight:600;background:linear-gradient(180deg,transparent,rgba(0,0,0,.7))}
+  .gallery .w2{grid-column:span 2}.gallery .h2{grid-row:span 2}
   .care{background:var(--l)}
-  .care .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-  .letter{font-size:2.6rem;font-weight:800;color:var(--g);line-height:1}
-  .care p{color:var(--muted);font-size:.95rem}
-  .team .m{text-align:center;padding:22px;border:1px solid var(--line);border-radius:16px}
-  .av{width:72px;height:72px;border-radius:50%;background:var(--l);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-weight:800;color:var(--g);font-size:1.3rem}
-  .team .m span{color:var(--muted);font-size:.88rem}
-  .rev{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
-  .stars{color:var(--acc);letter-spacing:2px}
-  .rev p{font-style:italic;margin:8px 0}
-  .rev b{font-size:.9rem}
-  .yard{background:var(--d);color:#fff;border-radius:20px;padding:40px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center}
-  .yard p{opacity:.85;margin:8px 0 18px}
-  .yard .btn{background:var(--acc);color:var(--d)}
-  footer{background:#0f2415;color:#cfd9cf;padding:40px 0 26px;font-size:.92rem}
-  footer .grid{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+  .care .grid{grid-template-columns:repeat(4,1fr)}
+  .cv{background:#fff;border-radius:16px;padding:26px;border:1px solid var(--line)}
+  .letter{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;font-weight:800;color:#fff;margin-bottom:12px}
+  .cv p{color:var(--muted);font-size:.94rem;margin-top:4px}
+  .reviews{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:960px;margin:0 auto}
+  .rev{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px}
+  .stars{color:#f2a900;letter-spacing:2px}
+  .rev p{margin:10px 0 12px;font-size:1.02rem}
+  .rev b{font-size:.92rem}
+  .team .grid{grid-template-columns:repeat(4,1fr)}
+  .m{text-align:center;padding:26px 18px;border:1px solid var(--line);border-radius:16px;background:#fff}
+  .av{width:76px;height:76px;border-radius:50%;background:var(--l);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-weight:800;color:var(--g);font-size:1.3rem}
+  .m span{color:var(--muted);font-size:.88rem;display:block;margin-top:2px}
+  .yard{display:grid;grid-template-columns:1.1fr 1fr;gap:0;border-radius:22px;overflow:hidden;background:var(--d);color:#fff}
+  .yard img{width:100%;height:100%;object-fit:cover;min-height:340px}
+  .yard .c{padding:44px}
+  .yard p{opacity:.85;margin:10px 0 20px}
+  .yard ul{list-style:none;display:grid;gap:8px;margin-bottom:24px}
+  .yard li::before{content:"✓";color:var(--acc);font-weight:800;margin-right:10px}
+  .yard .btn{background:var(--acc);color:#2a1a00}
+  .band{position:relative;color:#fff;text-align:center;padding:90px 22px;background:url("https://static.wixstatic.com/media/580836_3283f7ed4fd148a0ada7f1c13605e491~mv2.jpg/v1/fill/w_1600,h_700,al_c,q_80/band.jpg") center/cover}
+  .band::before{content:"";position:absolute;inset:0;background:rgba(10,30,15,.78)}
+  .band>*{position:relative}
+  .band h2{font-size:clamp(1.8rem,3.2vw,2.5rem)}
+  .band p{opacity:.9;margin:10px 0 24px}
+  .band .btn{background:var(--acc);color:#2a1a00;padding:14px 30px}
+  footer{background:#0b1d10;color:#c9d6cb;padding:56px 0 26px;font-size:.93rem}
+  footer .cols{display:grid;grid-template-columns:1fr 1fr 1.3fr;gap:34px}
+  footer h4{color:#fff;margin-bottom:10px}
   footer a{color:#fff}
-  footer .fine{margin-top:26px;border-top:1px solid #29412e;padding-top:16px;font-size:.82rem;opacity:.75}
-  nav .ph{white-space:nowrap}
-  @media(max-width:860px){.hero .wrap,.yard{grid-template-columns:1fr}nav a:not(.ph){display:none}}
+  footer iframe{width:100%;height:200px;border:0;border-radius:12px}
+  .fine{margin-top:34px;padding-top:18px;border-top:1px solid #213826;font-size:.82rem;opacity:.75;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+  .mbar{display:none}
+  @media(max-width:960px){
+    nav a:not(.ph){display:none}
+    .hero .wrap,.yard,footer .cols{grid-template-columns:1fr}
+    .grid,.care .grid,.team .grid{grid-template-columns:1fr 1fr}
+    .gallery{grid-template-columns:1fr 1fr}
+    .strip .wrap{grid-template-columns:1fr 1fr}
+    .reviews{grid-template-columns:1fr}
+  }
+  @media(max-width:600px){
+    .grid,.care .grid{grid-template-columns:1fr}
+    .brand small{display:none}
+    nav .ph{padding:8px 12px;font-size:.85rem}
+    .two{grid-template-columns:1fr}
+    .yard .c{padding:28px}
+    body{padding-bottom:64px}
+    .mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;box-shadow:0 -6px 20px rgba(0,0,0,.15)}
+    .mbar a{padding:16px;text-align:center;font-weight:700;text-decoration:none}
+    .mbar a:first-child{background:#fff;color:var(--d)}
+    .mbar a:last-child{background:var(--g);color:#fff}
+  }
 </style>
 </head>
 <body>
 <header><div class="wrap">
-  <div class="logo">All Seasons <span>Landscaping</span></div>
-  <nav><a href="#services">Services</a><a href="#care">Why Us</a><a href="#team">Team</a><a href="#yard">Garden Center</a><a class="ph" href="tel:17652282958">(765) 228-2958</a></nav>
+  <a class="brand" href="#top"><img src="https://static.wixstatic.com/media/580836_e70f6139b62f4a14855fd47a7f8f6d7e~mv2.png/v1/fill/w_120,h_120,al_c,q_90/logo.png" alt="All Seasons Landscaping logo"><div><b>All Seasons Landscaping</b><small>Lawn care · Landscaping · Snow &amp; ice</small></div></a>
+  <nav><a href="#services">Services</a><a href="#projects">Projects</a><a href="#team">Team</a><a href="#yard">Garden Center</a><a class="ph" href="tel:17652282958">(765) 228-2958</a></nav>
 </div></header>
 
-<div class="hero"><div class="wrap">
+<div class="hero" id="top"><div class="wrap">
   <div>
-    <h1>Professional landscaping &amp; lawn care in Central Indiana.</h1>
-    <p>We design, build and maintain beautiful landscapes that boost curb appeal, increase property value and stand the test of time.</p>
-    <div class="areas">Serving Muncie · Fishers · Noblesville · Pendleton · Anderson · Indianapolis</div>
+    <span class="tag">Locally owned · Serving Central Indiana since 2015</span>
+    <h1>Landscapes that boost curb appeal — and stand the test of time.</h1>
+    <p>We design, build and maintain beautiful outdoor spaces for homes and businesses, then keep them looking great every season of the year.</p>
+    <div class="areas">Muncie · Fishers · Noblesville · Pendleton · Anderson · Indianapolis</div>
     <div class="stats">
-      <div><b>Since 2015</b><span>Locally owned</span></div>
+      <div><b>10+ yrs</b><span>In business since 2015</span></div>
+      <div><b>4 seasons</b><span>Lawn care to snow &amp; ice</span></div>
       <div><b>Res + Com</b><span>Homes &amp; businesses</span></div>
-      <div><b>Year-round</b><span>Lawn to snow &amp; ice</span></div>
     </div>
   </div>
-  <form class="quote" onsubmit="event.preventDefault();document.getElementById('ok').style.display='block';this.reset()">
+  <form class="quote" id="quote" onsubmit="event.preventDefault();document.getElementById('ok').style.display='block';this.reset()">
     <h2>Request a free quote</h2>
-    <div class="sub">We respond fast — usually the same business day.</div>
-    <label>Name or business</label><input required>
-    <label>Phone</label><input type="tel" required>
+    <div class="sub">Prompt response — usually the same business day.</div>
+    <div class="two"><div><label>Name or business</label><input required></div><div><label>Phone</label><input type="tel" required></div></div>
     <label>Email</label><input type="email">
     <label>Service</label>
-    <select><option>Landscape design &amp; installation</option><option>Lawn care &amp; maintenance</option><option>Fertilization &amp; weed control</option><option>Snow &amp; ice management</option><option>Commercial property</option><option>Other</option></select>
+    <select><option>Landscape design &amp; installation</option><option>Patio, fire pit or retaining wall</option><option>Lawn care &amp; maintenance</option><option>Fertilization &amp; weed control</option><option>Snow &amp; ice management</option><option>Commercial property</option><option>Other</option></select>
     <label>Project details</label><textarea placeholder="Tell us about your property or project"></textarea>
-    <button class="btn" type="submit">Get my quote</button>
+    <button class="btn" type="submit">Get my free quote</button>
     <div id="ok">✓ Thanks! We'll be in touch shortly.</div>
   </form>
 </div></div>
 
+<div class="strip"><div class="wrap">
+  <div>Design + Build<span>One team from plan to planting</span></div>
+  <div>Year-round care<span>Mowing to snow removal</span></div>
+  <div>Garden Center<span>Plants, mulch &amp; supplies</span></div>
+  <div>Contractor program<span>Delivery available</span></div>
+</div></div>
+
 <section id="services"><div class="wrap">
-  <h2 class="t">Our services</h2>
-  <p class="t">Everything your property needs, every season of the year.</p>
+  <div class="head"><div class="k">Services</div><h2>Everything your property needs, every season</h2><p>From the first sketch to the last snowfall — one local team you can count on.</p></div>
   <div class="grid">
-    <div class="svc"><div class="img" style="background:#e3efdc">🌳</div><div class="b"><h3>Landscape Design &amp; Installation</h3><p>From flower beds to outdoor living spaces, designed and installed by our team.</p></div></div>
-    <div class="svc"><div class="img" style="background:#dcebd6">🌱</div><div class="b"><h3>Lawn Care &amp; Maintenance</h3><p>Worry-free lawn care. Sign up for seasonal packages and save.</p></div></div>
-    <div class="svc"><div class="img" style="background:#e7f1d8">🧪</div><div class="b"><h3>Fertilization &amp; Weed Control</h3><p>Multi-step programs plus sod, seeding, grading and aeration.</p></div></div>
-    <div class="svc"><div class="img" style="background:#f3ecd9">🪴</div><div class="b"><h3>Landscape Supply &amp; Garden Center</h3><p>Plants, mulch, soil and expert advice — with delivery and a contractor program.</p></div></div>
-    <div class="svc"><div class="img" style="background:#e3ecf2">❄️</div><div class="b"><h3>Snow &amp; Ice Management</h3><p>Keep your home or business safe and accessible all winter long.</p></div></div>
-    <div class="svc"><div class="img" style="background:#ece6f2">🏢</div><div class="b"><h3>Commercial Properties</h3><p>Reliable grounds care for businesses across Central Indiana.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/580836_3283f7ed4fd148a0ada7f1c13605e491~mv2.jpg/v1/fill/w_720,h_440,al_c,q_80/design.jpg" alt="Landscape design"><div class="b"><h3>Landscape Design &amp; Installation</h3><p>Flower beds, plantings and outdoor living spaces designed around how you use your yard.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/580836_9715d2bbc41c4b5f9c0138b3dbb2fc9d~mv2.png/v1/fill/w_720,h_440,al_c,q_80/hardscape.jpg" alt="Stone patio and fire pit"><div class="b"><h3>Patios, Fire Pits &amp; Walls</h3><p>Stone patios, fire pits and retaining walls built to last through Indiana winters.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/580836_0b1a8f66fabb492292f64d3371c24a54~mv2.png/v1/fill/w_720,h_440,al_c,q_80/lawn.jpg" alt="Lawn and bed maintenance"><div class="b"><h3>Lawn Care &amp; Maintenance</h3><p>Worry-free mowing, edging and bed care. Seasonal packages save you more.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/580836_6d7048a121914840b5905d5f4344df4d~mv2.png/v1/fill/w_720,h_440,al_c,q_80/fert.jpg" alt="Healthy lawn and beds"><div class="b"><h3>Fertilization &amp; Weed Control</h3><p>Multi-step programs plus sod, seeding, grading and aeration for a lush, green lawn.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/580836_d4a01047b7b5494f8ccb8e82e8510455~mv2.jpg/v1/fill/w_720,h_440,al_c,q_80/garden.jpg" alt="Garden center greenhouse"><div class="b"><h3>Garden Center &amp; Supply</h3><p>Plants, mulch, soil and expert advice — with delivery and a contractor program.</p></div></div>
+    <div class="svc"><img src="https://static.wixstatic.com/media/580836_2124c94ded784cbe80ea01a248bb8cd0~mv2.png/v1/fill/w_720,h_440,al_c,q_80/snow.jpg" alt="Commercial snow removal"><div class="b"><h3>Snow &amp; Ice Management</h3><p>Plowing and ice control that keeps your home or business safe all winter long.</p></div></div>
   </div>
 </div></section>
 
-<section id="care" class="care"><div class="wrap">
-  <h2 class="t">All Seasons C.A.R.E.</h2>
-  <p class="t">More than an acronym — it's how we work on every property.</p>
+<section id="projects" style="padding-top:0"><div class="wrap">
+  <div class="head"><div class="k">Recent work</div><h2>Projects around Central Indiana</h2><p>A few of the homes and businesses we've transformed.</p></div>
+  <div class="gallery">
+    <figure class="w2 h2"><img src="https://static.wixstatic.com/media/580836_a81ad8bf66d340769dd092021ea72b97~mv2.jpg/v1/fill/w_900,h_860,al_c,q_80/p1.jpg" alt=""><figcaption>Front landscape &amp; boulder beds</figcaption></figure>
+    <figure><img src="https://static.wixstatic.com/media/580836_9715d2bbc41c4b5f9c0138b3dbb2fc9d~mv2.png/v1/fill/w_500,h_420,al_c,q_80/p2.jpg" alt=""><figcaption>Flagstone fire pit patio</figcaption></figure>
+    <figure><img src="https://static.wixstatic.com/media/580836_38dfdaf3488447fba0c31a8546e745da~mv2.png/v1/fill/w_500,h_420,al_c,q_80/p3.jpg" alt=""><figcaption>Backyard patio &amp; beds</figcaption></figure>
+    <figure><img src="https://static.wixstatic.com/media/580836_8efae9d8dce7439daa84b079eeae288f~mv2.png/v1/fill/w_500,h_420,al_c,q_80/p4.jpg" alt=""><figcaption>Retaining wall build</figcaption></figure>
+    <figure><img src="https://static.wixstatic.com/media/580836_c242e14064904792b848dba83df79b5f~mv2.png/v1/fill/w_500,h_420,al_c,q_80/p5.jpg" alt=""><figcaption>Commercial grounds</figcaption></figure>
+    <figure class="w2"><img src="https://static.wixstatic.com/media/580836_5b0c23a6345b457abee53b699710a08e~mv2.png/v1/fill/w_900,h_420,al_c,q_80/p6.jpg" alt=""><figcaption>Patio &amp; hardscape installation</figcaption></figure>
+    <figure class="w2"><img src="https://static.wixstatic.com/media/580836_d2541ff455024833911ecf9627670aa5~mv2.png/v1/fill/w_900,h_420,al_c,q_80/p7.jpg" alt=""><figcaption>Woodland garden path</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="care"><div class="wrap">
+  <div class="head"><div class="k">Why All Seasons</div><h2>All Seasons C.A.R.E.</h2><p>More than an acronym — it's how we work on every property.</p></div>
   <div class="grid">
-    <div><div class="letter">C</div><h3>Credible</h3><p>Expertise, an experienced team and a reputation that make it stress-free.</p></div>
-    <div><div class="letter">A</div><h3>Affordable</h3><p>Efficiency, equipment and skilled people deliver premium service at great value.</p></div>
-    <div><div class="letter">R</div><h3>Response</h3><p>Prompt response times and clear communication set us apart.</p></div>
-    <div><div class="letter">E</div><h3>Enhancement</h3><p>We treat every property like our own — and every property improves when we visit.</p></div>
+    <div class="cv"><div class="letter" style="background:#3a7a39">C</div><h3>Credible</h3><p>Expertise, an experienced team and a reputation that make it stress-free.</p></div>
+    <div class="cv"><div class="letter" style="background:#f0a63a">A</div><h3>Affordable</h3><p>Efficiency, equipment and skilled people deliver premium service at great value.</p></div>
+    <div class="cv"><div class="letter" style="background:#5bb8c9">R</div><h3>Response</h3><p>Prompt response times and clear communication set us apart.</p></div>
+    <div class="cv"><div class="letter" style="background:#e7c43a">E</div><h3>Enhancement</h3><p>We treat every property like our own — and every property improves when we visit.</p></div>
   </div>
 </div></section>
 
 <section><div class="wrap">
-  <h2 class="t">What customers say</h2>
-  <p class="t">&nbsp;</p>
-  <div class="grid">
-    <div class="rev"><div class="stars">★★★★★</div><p>"This team of workers paid attention to every detail as they cleaned up leaves from our yard and flower beds. The yard looks wonderful!"</p><b>— Nancy Young</b></div>
-    <div class="rev"><div class="stars">★★★★★</div><p>"The work was quick, clean, and beautiful. I would definitely recommend All Seasons Landscaping services."</p><b>— Ryan Pickering</b></div>
+  <div class="head"><div class="k">Reviews</div><h2>What customers say</h2></div>
+  <div class="reviews">
+    <div class="rev"><div class="stars">★★★★★</div><p>"I can't say enough about this amazing company and the work that they do. This team of workers paid attention to every detail as they cleaned up leaves from our yard and flower beds. The yard looks wonderful! Thank you, Jesse, for your professionalism."</p><b>Nancy Young</b></div>
+    <div class="rev"><div class="stars">★★★★★</div><p>"The work was quick, clean, and beautiful. I would definitely recommend All Seasons Landscaping services."</p><b>Ryan Pickering</b></div>
   </div>
 </div></section>
 
 <section id="team" class="team" style="padding-top:0"><div class="wrap">
-  <h2 class="t">Meet the team</h2>
-  <p class="t">Dedication. Expertise. Passion.</p>
+  <div class="head"><div class="k">Our team</div><h2>Dedication. Expertise. Passion.</h2></div>
   <div class="grid">
     <div class="m"><div class="av">JH</div><h3>Jesse Hart</h3><span>Co-Owner · Operations &amp; customer care</span></div>
     <div class="m"><div class="av">NS</div><h3>Nate Southerland</h3><span>Co-Owner · Plant selection &amp; design</span></div>
-    <div class="m"><div class="av">CR</div><h3>Carson Rhoades</h3><span>Lawncare Maintenance Operations</span></div>
-    <div class="m"><div class="av">BP</div><h3>Brady Pease</h3><span>Landscape Team Operations</span></div>
+    <div class="m"><div class="av">CR</div><h3>Carson Rhoades</h3><span>Lawn care maintenance operations</span></div>
+    <div class="m"><div class="av">BP</div><h3>Brady Pease</h3><span>Landscape installation operations</span></div>
   </div>
 </div></section>
 
 <section id="yard" style="padding-top:0"><div class="wrap">
   <div class="yard">
-    <div><h2>Visit our Muncie Landscape Yard</h2><p>Your go-to for mulch, plants and landscape supplies. Great contractor programs and delivery available.</p><a class="btn" href="https://maps.google.com/?q=3118+S+Hoyt+Ave+Muncie+IN">Get directions</a></div>
-    <div><b>3118 S Hoyt Ave</b><br>Muncie, IN<br><br>📞 (765) 228-2958<br>✉️ allseasonsmuncie@gmail.com</div>
+    <img src="https://static.wixstatic.com/media/580836_d4a01047b7b5494f8ccb8e82e8510455~mv2.jpg/v1/fill/w_900,h_700,al_c,q_80/yard.jpg" alt="Garden center">
+    <div class="c"><h2>Visit our Muncie Landscape Yard</h2><p>Your go-to for mulch, plants and landscape supplies — plus advice from people who install them every day.</p>
+      <ul><li>Mulch, soil, stone &amp; plants</li><li>Delivery available</li><li>Contractor program for businesses</li></ul>
+      <a class="btn" href="https://maps.google.com/?q=3118+S+Hoyt+Ave+Muncie+IN">Get directions · 3118 S Hoyt Ave</a></div>
   </div>
 </div></section>
 
+<div class="band"><h2>Let's make your property the best on the block.</h2><p>Free quotes, fast response, year-round care.</p><a class="btn" href="#quote">Request my free quote</a></div>
+
 <footer><div class="wrap">
-  <div class="grid">
-    <div><b style="color:#fff">All Seasons Landscaping</b><br>Landscaping &amp; lawn care since 2015</div>
-    <div><b style="color:#fff">Contact</b><br><a href="tel:17652282958">(765) 228-2958</a><br><a href="mailto:allseasonsmuncie@gmail.com">allseasonsmuncie@gmail.com</a></div>
-    <div><b style="color:#fff">Areas</b><br>Muncie · Indianapolis<br>All of Central Indiana</div>
+  <div class="cols">
+    <div><h4>All Seasons Landscaping</h4><p>Professional landscaping &amp; lawn care in Central Indiana since 2015.</p><p style="margin-top:10px">Landscape Yard: 3118 S Hoyt Ave, Muncie, IN</p></div>
+    <div><h4>Contact</h4><p><a href="tel:17652282958">(765) 228-2958</a><br><a href="mailto:allseasonsmuncie@gmail.com">allseasonsmuncie@gmail.com</a></p><p style="margin-top:10px">Muncie · Indianapolis · All of Central Indiana</p></div>
+    <div><iframe loading="lazy" src="https://maps.google.com/maps?q=3118%20S%20Hoyt%20Ave%2C%20Muncie%2C%20IN&amp;z=14&amp;output=embed" title="Map"></iframe></div>
   </div>
-  <div class="fine">© 2026 All Seasons Landscaping · <em>Concept mockup prepared by Jason Shen — not the live site.</em></div>
+  <div class="fine"><span>© 2026 All Seasons Landscaping</span><em>Concept redesign prepared by Jason Shen — not the live site.</em></div>
 </div></footer>
+
+<div class="mbar"><a href="tel:17652282958">📞 Call</a><a href="#quote">Free quote</a></div>
 </body>
 </html>
